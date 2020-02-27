@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ajouterEnseignantController">
+   <children>
+      <Label layoutX="248.0" layoutY="76.0" text="Nom               :" />
+      <Label layoutX="247.0" layoutY="120.0" text="Prenom          :" />
+      <Label layoutX="249.0" layoutY="160.0" text="CIN                  :" />
+      <Label layoutX="248.0" layoutY="198.0" text="Salaire             :" />
+      <Label layoutX="247.0" layoutY="235.0" text="Evaluation     :" />
+      <Label layoutX="247.0" layoutY="271.0" text="Absence        :" />
+      <TextField fx:id="txNom" layoutX="335.0" layoutY="71.0" />
+      <TextField fx:id="txPrenom" layoutX="335.0" layoutY="115.0" />
+      <TextField fx:id="txCIN" layoutX="335.0" layoutY="155.0" />
+      <TextField fx:id="txSalaire" layoutX="335.0" layoutY="193.0" />
+      <TextField fx:id="txEvaluation" layoutX="335.0" layoutY="230.0" />
+      <TextField fx:id="txAbsence" layoutX="335.0" layoutY="266.0" />
+      <Button fx:id="btnEnvoyer" layoutX="384.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#envoyerEnseignant" text="Envoyer" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/pidevoussama/87358447_802142133596436_6297333718579150848_n.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="245.0" layoutY="16.0" text="Ajouter enseignant">
+         <font>
+            <Font name="American Typewriter Bold" size="26.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

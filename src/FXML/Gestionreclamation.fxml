@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.GestionreclamationController">
+   <children>
+      <TableView fx:id="tabv" layoutX="108.0" layoutY="62.0" prefHeight="393.0" prefWidth="559.0">
+        <columns>
+          <TableColumn fx:id="ct" prefWidth="120.0" text="type" />
+            <TableColumn fx:id="co" prefWidth="130.0" text="object" />
+            <TableColumn fx:id="cc" prefWidth="205.0" text="contenu" />
+            <TableColumn fx:id="cdd" prefWidth="100.0" text="date" />
+        </columns>
+      </TableView>
+      <TextField fx:id="rft" layoutX="108.0" layoutY="471.0" promptText="type" />
+      <TextField fx:id="tfo" layoutX="108.0" layoutY="512.0" promptText="object" />
+      <TextField fx:id="tfc" layoutX="322.0" layoutY="512.0" prefHeight="81.0" prefWidth="316.0" promptText="contenu de réclamation" />
+      <Button fx:id="ajouter" layoutX="755.0" layoutY="172.0" mnemonicParsing="false" onAction="#Ajouter" text="ajouter" />
+      <Button fx:id="supprimer" layoutX="755.0" layoutY="212.0" mnemonicParsing="false" onAction="#supp" text="supprimer" />
+      <Button fx:id="modifier" layoutX="755.0" layoutY="250.0" mnemonicParsing="false" onAction="#update" text="modifier" />
+      <DatePicker fx:id="datep" layoutX="339.0" layoutY="463.0" />
+      <Button fx:id="btnback" layoutX="778.0" layoutY="22.0" mnemonicParsing="false" onAction="#back" text="back" />
+   </children>
+</AnchorPane>

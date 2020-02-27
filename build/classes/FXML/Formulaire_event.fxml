@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="461.0" prefWidth="811.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.FormulaireEventController">
+   <children>
+      <Label layoutX="266.0" layoutY="124.0" text="Titre evenement     :" />
+      <Label layoutX="266.0" layoutY="160.0" text="Programme              :" />
+      <Label layoutX="586.0" layoutY="124.0" text="Région    :" />
+      <Label layoutX="265.0" layoutY="282.0" text="Date début             :" />
+      <Label layoutX="265.0" layoutY="330.0" text="Date fin                  :" />
+      <Label layoutX="266.0" layoutY="377.0" text="Nombre des participant   :" />
+      <TextArea fx:id="txProgramme" layoutX="389.0" layoutY="160.0" prefHeight="96.0" prefWidth="394.0" promptText="Détails de l'événement..." />
+      <TextField fx:id="txTitre" layoutX="390.0" layoutY="119.0" promptText="événement" />
+      <TextField fx:id="txRegion" layoutX="649.0" layoutY="119.0" prefHeight="27.0" prefWidth="133.0" promptText="sud,nord,etc" />
+      <Label layoutX="374.0" layoutY="33.0" text="Ajouter événement">
+         <font>
+            <Font name="American Typewriter Bold" size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txnbrPar" layoutX="438.0" layoutY="372.0" prefHeight="27.0" prefWidth="118.0" promptText="nombre totale" />
+      <ImageView fitHeight="169.0" fitWidth="243.0" layoutX="16.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/pidevoussama/87358447_802142133596436_6297333718579150848_n.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnValider" layoutX="635.0" layoutY="283.0" mnemonicParsing="false" onMouseClicked="#envoyerEvent" prefHeight="40.0" prefWidth="110.0" text="Valider">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnAnnuler" layoutX="636.0" layoutY="351.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="110.0" text="Annuler">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtddj" layoutX="404.0" layoutY="277.0" prefHeight="31.0" prefWidth="33.0" promptText="jj" />
+      <TextField fx:id="txtddm" layoutX="451.0" layoutY="277.0" prefHeight="31.0" prefWidth="49.0" promptText="mm" />
+      <TextField fx:id="txtdda" layoutX="519.0" layoutY="277.0" prefHeight="31.0" prefWidth="74.0" promptText="aaaa" />
+      <TextField fx:id="txtdfj" layoutX="404.0" layoutY="325.0" prefHeight="31.0" prefWidth="33.0" promptText="jj" />
+      <TextField fx:id="txtdfm" layoutX="451.0" layoutY="325.0" prefHeight="31.0" prefWidth="49.0" promptText="mm" />
+      <TextField fx:id="txtdfa" layoutX="519.0" layoutY="325.0" prefHeight="31.0" prefWidth="74.0" promptText="aaaa" />
+   </children>
+</AnchorPane>
